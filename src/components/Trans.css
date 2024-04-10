@@ -1,0 +1,110 @@
+.top-section{
+    position: fixed;
+    background-color: black;
+    width : 100%;
+    top : 0;
+    margin-bottom: 0;
+    display: flex;
+    color: #fff; 
+    padding: 5px; 
+    text-align: center; 
+    column-gap: 68%;
+  }
+  h1{
+    text-decoration: underline black;
+    color: white;
+
+  }
+  .p{
+    margin-bottom: 0;
+  }
+  .figure{
+    margin-top: 3px;
+
+  }
+  
+  body{
+    background-color: #333;
+    padding-bottom : 50px;
+  }
+  .main{
+    width : 95%;
+    margin-left: 1.5%;
+    border: 1px solid white;
+    padding: 15px;
+  }
+  .q-a{
+    display: flex;
+    column-gap: 15%;
+  }
+  .ques,
+  .ans{
+    display: flex;
+    flex-direction: column;
+  }
+  .label,
+  .fee,
+  .total{
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+  }
+  input{
+    margin-top: 10px;
+    height: 17px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    margin-bottom: 10px;
+
+  }
+  .fees,
+  .total-fee{
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  .ok{
+    color: #333;
+    padding:10px ;
+    font-size: medium;
+    font-weight: bold;
+    
+    background-color: white;
+
+  }
+  .ok:hover{
+    background-color: #007bff;
+    color: white;
+  }
+  .link{
+    width : 97.1%;
+    margin-left: 1.5%;
+    margin-top: 1%;
+    height: 70px;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    background-color: black;
+    border-radius: 10px;
+  }
+  .link:hover,
+  .link:active{
+    height: 75px;
+    font-size: larger;
+    margin-top: 0.75%;
+  }
+  .heading{
+    margin-left: 27px;
+    color: white;
+  }
+  .caution{
+    margin-left: 27px;
+    width: 97%;
+    cursor: pointer;
+  }
+
