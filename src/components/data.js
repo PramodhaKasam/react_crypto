@@ -6,7 +6,7 @@ function Data()
 {
 
     let url ="https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=6&page=1&sparkline=false";
-    const [data, setData] = useState(null);
+    let [data, setData] = useState(null);
 
     useEffect(
       () =>{
@@ -26,6 +26,11 @@ function Data()
       },[])
       
     console.log(data);
+      
+    if(!data) return (
+        <p className='wait'>Please wait</p>
+    );
+    
     return (
         <>
             <div className="top-section">
@@ -44,13 +49,13 @@ function Data()
                     <p className='que'>Maximum supply in market</p>
                 </div>
                 <div className='anses'>
-                    <p className='ans'>{data.id}</p>
-                    <p className='ans'>{data.symbol}</p>
-                    <p className='ans'>{data.current_price}</p>
-                    <p className='ans'>{data.atl}</p>
-                    <p className='ans'>{data.ath}</p>
-                    <p className='ans'>{data.total_supply}</p>
-                    <p className='ans'>{data.max_supply}</p>
+                    <p className='ans-1'>{data.id}</p>
+                    <p className='ans-2'>{data.symbol}</p>
+                    <p className='ans-3'>{data.current_price}</p>
+                    <p className='ans-4'>{data.atl}</p>
+                    <p className='ans-5'>{data.ath}</p>
+                    <p className='ans-6'>{data.total_supply}</p>
+                    <p className='ans-7'>{data.max_supply}</p>
                 </div>
             </div>
             <Link to='/Contact'>

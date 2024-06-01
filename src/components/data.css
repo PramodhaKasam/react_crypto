@@ -49,7 +49,12 @@
   .go:hover{
     opacity: 0.3;
   }
-  
+
   .go:active{
     opacity:0.7
+  }
+
+  .wait{
+    color: white;
+    margin-left: 40%;
   }
