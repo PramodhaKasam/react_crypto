@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 function Data()
 {
 
-    let url ="https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=6&page=1&sparkline=false";
+    let x ="https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=6&page=1&sparkline=false";
     let [data, setData] = useState(null);
 
     useEffect(
@@ -13,7 +13,7 @@ function Data()
         async function GetFacts() {
           console.log("Fetching data.....");
           try{
-            const chakri = await fetch(url)
+            const chakri = await fetch(x)
             const info =  await chakri.json();
             setData(info[0]);
           }

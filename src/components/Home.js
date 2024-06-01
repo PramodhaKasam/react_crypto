@@ -12,7 +12,7 @@ function Home() {
           
         </div>
         <div className="img">
-            <img src={image} alt="Image"/>
+            <img src={image}/>
         </div>
         <Link to="/Contact">
           <button className="start" >Enter</button>
