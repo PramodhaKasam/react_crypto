@@ -1,0 +1,42 @@
+.top-section{
+    position: fixed;
+    background-color: black;
+    width : 100%;
+    top : 0;
+    margin-bottom: 0;
+    display: flex;
+    color: #fff; 
+    padding: 5px; 
+    text-align: center; 
+    column-gap: 75%;
+  }
+
+  body{
+    background-color: #333;
+    padding-bottom : 50px;
+  }
+
+  .ques{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+    color: white;
+  }
+
+  .que{
+    width: 500px;
+  }
+  
+  .App{
+    display : flex;
+    flex-direction: row;
+    column-gap: 35%;
+    
+  }
+  
+  .anses{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    
+  }

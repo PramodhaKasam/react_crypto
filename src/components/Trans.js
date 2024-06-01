@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import {useParams} from 'react-router-dom';
 import { useState } from 'react';
 
+
    
 let figure = JSON.parse(sessionStorage.getItem('figure'));
 function Trans() {
@@ -27,6 +28,7 @@ function Trans() {
         else{
             alert('Transaction is successful ');
             updateFigure();
+            SaveToStorage();
             amount.value = '';
             setFee(0);
             setTotal(0);
@@ -57,7 +59,7 @@ function Trans() {
     [figure, setFigure] = useState(120);
     const updateFigure = () =>{
             setFigure(120-amount.value*1.1);
-            SaveToStorage();
+           
     }
 
     function SaveToStorage() {
@@ -69,8 +71,7 @@ function Trans() {
 
     return(
         <>
-            <h3 className='heading'>Transactions with {name} :</h3>
-
+           
            <div className="top-section">
                 <Link to='/Home'>
                     <h1 >VaultCoin</h1>
@@ -80,7 +81,14 @@ function Trans() {
                     <h3 className='figure'>{figure}BTC</h3>
                 </div>
             </div>
-
+            <div className='info'>
+                <p>View the price of bitcoin before going for a transaction.
+                   <Link to='/Data'>
+                     Click here
+                   </Link>
+                </p>  
+            </div>
+            <h3 className='heading'>Transactions with {name} :</h3>
             <div className="main">
                < div className="q-a">
                 <div className='ques'>
