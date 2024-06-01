@@ -53,6 +53,10 @@ function Data()
                     <p className='ans'>{data.max_supply}</p>
                 </div>
             </div>
+            <Link to='/Contact'>
+             <button className='go'>Go back to transacction</button>
+            </Link>
+           
         </>
     )
 }

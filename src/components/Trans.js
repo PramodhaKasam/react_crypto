@@ -81,33 +81,29 @@ function Trans() {
                     <h3 className='figure'>{figure}BTC</h3>
                 </div>
             </div>
-            <div className='info'>
-                <p>View the price of bitcoin before going for a transaction.
-                   <Link to='/Data'>
-                     Click here
-                   </Link>
-                </p>  
-            </div>
-            <h3 className='heading'>Transactions with {name} :</h3>
-            <div className="main">
-               < div className="q-a">
-                <div className='ques'>
-                        <p className='label'>Amount :</p>
-                        <p className='fee'>Transaction fee :</p>
-                        <p className='total'>Total amount :</p>
+            <div className='cont-2'>
+                    <h3 className='heading'>Transactions with {name} :</h3>
+                    <div className="main">
+                    < div className="q-a">
+                        <div className='ques'>
+                                <p className='label'>Amount :</p>
+                                <p className='fee'>Transaction fee :</p>
+                                <p className='total'>Total amount :</p>
+                            </div>
+                            <div className='ans'>
+                                <input  id='amount' type='text' placeholder='(in BTC)' />
+                                <p className='fees'>{fee}</p>
+                                <p className='total-fee'>{total}</p>
+                            </div>
                     </div>
-                    <div className='ans'>
-                        <input  id='amount' type='text' placeholder='(in BTC)' />
-                        <p className='fees'>{fee}</p>
-                        <p className='total-fee'>{total}</p>
+                        <button className='ok' onClick={Alert}>Send</button>
                     </div>
-               </div>
-                <button className='ok' onClick={Alert}>Send</button>
-            </div>
 
-            <Link to='/Contact'>
-                <button className='link'>Go for other transaction</button>
-            </Link>
+                    <Link to='/Contact'>
+                        <button className='link'>Go for other transaction</button>
+                    </Link>
+            </div>
+            
         </>
     )
 }

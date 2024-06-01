@@ -17,14 +17,11 @@
   .img{
     display: flex;
     justify-content: center;
+    margin-left: 5%;
   }
   image{
-    
-    
     align-items: center;
     justify-content: center;
-    
-  
   }
   body{
     background-color: #333;
@@ -37,7 +34,6 @@
     color: #14426a;
     border: none;
     font-weight: bolder;
-    
     width : 11%;
     padding-top:1.75%;
     padding-bottom:1.75%;

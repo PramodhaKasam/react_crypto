@@ -40,3 +40,16 @@
     color: white;
     
   }
+
+  .go{
+    height: 40px;
+    cursor: pointer;
+  }
+
+  .go:hover{
+    opacity: 0.3;
+  }
+  
+  .go:active{
+    opacity:0.7
+  }
